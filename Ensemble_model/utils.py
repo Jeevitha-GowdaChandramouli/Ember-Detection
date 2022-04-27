@@ -9,6 +9,15 @@ import torch.distributed as dist
 import errno
 import os
 
+def box_convert(boxes):
+    '''
+    Functionality: Convert bounding boxes format from xywh to xyxy
+    Input: boxes of the format xmin, ymin, width, height
+    Output: boxes of format xmin, ymin, xmax, ymax (top left and bottom right points)
+    '''
+    x, y, w, h = boxes.unbind(-1)
+    boxes = torch.stack([x, y, x + w, y + h], dim=-1)
+    return boxes
 
 class SmoothedValue(object):
     """Track a series of values and provide access to smoothed values over a
