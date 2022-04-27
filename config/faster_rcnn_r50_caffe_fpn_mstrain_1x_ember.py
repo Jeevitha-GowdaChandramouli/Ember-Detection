@@ -1,12 +1,6 @@
 # The new config inherits a base config to highlight the necessary modification
 _base_ = '../faster_rcnn/faster_rcnn_r50_caffe_fpn_mstrain_1x_coco.py'
 
-
-# We also need to change the num_classes in head to match the dataset's annotation
-# custom_imports = dict(
-#     imports=['mmdet.models.backbones.resnet_mod.py'],
-#     allow_failed_imports=False)
-
 model = dict(
     backbone=dict(
         type = 'ResNet_mod',
@@ -20,6 +14,18 @@ model = dict(
         init_cfg=dict(
             type='Pretrained',
             checkpoint='open-mmlab://detectron2/resnet50_caffe')),
+    rpn_head=dict(
+        type='RPNHead',
+        in_channels=256,
+        feat_channels=256,
+        anchor_generator=dict(
+            type='AnchorGenerator',
+            scales = [8, 16],
+            ratios=[0.5, 1.0, 2.0],
+            strides=[4, 8, 16, 32, 64]),
+        loss_cls=dict(
+            type='CrossEntropyLoss', use_sigmoid=True, loss_weight=1.0),
+        loss_bbox=dict(type='L1Loss', loss_weight=1.0)),
     roi_head=dict(
         bbox_head=dict(num_classes=1),))
 
