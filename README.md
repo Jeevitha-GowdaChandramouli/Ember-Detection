@@ -22,7 +22,7 @@ NOTE: med2 > med1 <br> <br>
 
 Approach 2 was only tested for 0415_take2 and 0415_take1 datasets <br> <br>
 
-(3) Approach 3 (Work in Progress): 
+(3) Approach 3 (Work in Progress): [Link to the Notebook](https://github.com/Jeevitha-GowdaChandramouli/Ember-Detection/blob/main/Ensemble_model/Ember_Detection.ipynb)
 
 - Upstream: ResNet50 backbone followed by transpose convolution to increase width and height of feature map
 - Downstream: Conv1 with kernel size (1x1) followed by non linearity
