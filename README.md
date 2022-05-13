@@ -2,7 +2,8 @@
 
 Train, test and validation split used for all the datasets: 70%, 15% and 15%
 
-There were two approaches that were tried for detecting embers in images <br>
+There were two approaches that were tried for detecting embers in images using MMDetection <br>
+Approach 1 and 2: [Link](https://github.com/Jeevitha-GowdaChandramouli/Ember-Detection/tree/main/MMDetection)
 
 (1) Approach 1: Vanilla FasterRCNN model from MMDetection <br>
 Below shown are the plots for the various datasets for which Approach 1 was used:
@@ -22,7 +23,7 @@ NOTE: med2 > med1 <br> <br>
 
 Approach 2 was only tested for 0415_take2 and 0415_take1 datasets <br> <br>
 
-(3) Approach 3 (Work in Progress): [Link to the Notebook](https://github.com/Jeevitha-GowdaChandramouli/Ember-Detection/blob/main/Ensemble_model/Ember_Detection.ipynb)
+(3) Approach 3 (Work in Progress): [Link](https://github.com/Jeevitha-GowdaChandramouli/Ember-Detection/blob/main/Ensemble_model/Ember_Detection.ipynb)
 
 - Upstream: ResNet50 backbone followed by transpose convolution to increase width and height of feature map
 - Downstream: Conv1 with kernel size (1x1) followed by non linearity
