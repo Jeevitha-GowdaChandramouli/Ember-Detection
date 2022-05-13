@@ -37,7 +37,7 @@ Output dimensions are in the format (batch_size, channels, width, height)
 
 ## Important MMDetection helper files that were created:
 
-1. Preprocessing file [preprocessing_file](https://github.com/Jeevitha-GowdaChandramouli/Ember-Detection/blob/main/MMDetection/preprocessing_notebook.ipynb) for creating train, val, and test annotation files from the base annotation JSON file. This file also helps in splitting the dataset images into train, val, and test images.
-2. Config file used: [Config](https://github.com/Jeevitha-GowdaChandramouli/Ember-Detection/tree/main/MMDetection/config) <br>
+1. [Preprocessing_file](https://github.com/Jeevitha-GowdaChandramouli/Ember-Detection/blob/main/MMDetection/preprocessing_notebook.ipynb) for creating train, val, and test annotation files from the base annotation JSON file. This file also helps in splitting the dataset images into train, val, and test images.
+2. Config files used are present in [Config](https://github.com/Jeevitha-GowdaChandramouli/Ember-Detection/tree/main/MMDetection/config) <br>
 4. File to visualize the bounding boxes of the trained model: [Inference_file](https://github.com/Jeevitha-GowdaChandramouli/Ember-Detection/blob/main/MMDetection/inference.ipynb)
 
