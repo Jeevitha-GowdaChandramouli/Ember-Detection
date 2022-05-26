@@ -3,7 +3,7 @@ _base_ = '../faster_rcnn/faster_rcnn_r50_caffe_fpn_mstrain_1x_coco.py'
 
 model = dict(
     backbone=dict(
-        type = 'ResNet_mod',
+        type = 'ResNet',
         depth=18,
         num_stages=4,
         out_indices=(0, 1, 2, 3),
