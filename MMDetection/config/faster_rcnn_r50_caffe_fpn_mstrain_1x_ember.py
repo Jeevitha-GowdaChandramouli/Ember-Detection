@@ -31,7 +31,7 @@ model = dict(
 
 # Modify dataset related settings
 dataset_type = 'COCODataset'
-classes = ('__background__', 'ember')
+classes = ('ember',)
 data = dict(
     train=dict(
         img_prefix='data/EmberDetection/train2022/',
