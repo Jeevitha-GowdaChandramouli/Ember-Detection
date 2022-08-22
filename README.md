@@ -1,7 +1,13 @@
 # Ember-Detection
 
+## Objective
+Reduce the impact of wildfire by detecting fire embers using computer vision and extinguishing them using water retardant bombs powered by drone technogolgies.
+
+## Data
 Train, test and validation split used for all the datasets: 70%, 15% and 15%
 
+
+## Methodology
 There were two approaches that were tried for detecting embers in images using MMDetection <br>
 Approach 1 and 2: [Link](https://github.com/Jeevitha-GowdaChandramouli/Ember-Detection/tree/main/MMDetection)
 
