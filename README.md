@@ -1,7 +1,7 @@
 # Ember-Detection
 
 ## Objective
-Reduce the impact of wildfire by detecting fire embers using computer vision and extinguishing them using water retardant bombs powered by drone technogolgies.
+Reduce the impact of wildfire by detecting fire embers using computer vision based object detection and extinguishing them using water retardant bombs powered by drone technogolgies.
 
 ## Data
 Train, test and validation split used for all the datasets: 70%, 15% and 15%
